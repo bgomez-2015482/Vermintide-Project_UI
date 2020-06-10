@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- FRAMEWORK BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- css-->
+    <link rel="stylesheet" type="text/css" href="../src/index.css" th:href="@{./css/index1.css}">
+    <title>Agregar Contactos</title>
 </head>
-
 <body>
-    <h1>hello world owo</h1>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-</body>
+    <div class="modal-dialog text-center">
+        <div class="col-sm-9 seccionP">
+            <div class="modal-content" >
+  
+                <div class="col-12 imagu">
+                    <h1>Registros</h1>
+                </div>
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label>Nombre</label>
+                        <input type="text" class="form-control"  >
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label >Apellido</label>
+                        <input type="text" class="form-control" >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label  for="inputEmail4" >Correo Electronico</label>
+                      <input type="text" class="form-control"  placeholder="Ingrese su correo">
+                    </div>
+                    <div class="form-group">
+                      <label >Nombre de Usuario</label>
+                      <input type="text" class="form-control"  placeholder="Usuario" >
+                    </div>
+                    <div class="form-group">
+                        <label >Contraseña</label>
+                        <input type="text" class="form-control"  placeholder="****-****" >
 
+                    </div>
+                   <div class="form-group">
+                    <label><input type="checkbox" id="cbox1" value="first_checkbox"> Acepto los Terminos de Uso </label><br>
+                   </div>
+
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
