@@ -21,7 +21,7 @@ body {
 #container-register {
     background-color: #1D1F20;
     position: relative;
-    top: 10%;
+    top: 20%;
     margin: auto;
     width: 340px;
     height: 480px;
@@ -188,4 +188,121 @@ input[type=submit] {
     border: 0 none;
     cursor: pointer;
     border-radius: 3px;
+}
+
+/* Header area start */
+
+header{
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #1D1F20;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+}
+div.container-header{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+div.header-container{
+    display: flex;
+    align-items: center;
+}
+div.container-logo{
+    width: 20%;
+}
+div.container-searchbar{
+    max-width: 500px;
+    width: 55%;
+    justify-content: center;
+}
+div.container-access{
+    width: 20%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+div.container-searchbar form{
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
+}
+div.input-searchbar{
+    width: 100%;
+    margin: auto;
+    border-radius: 4px;
+    background-color: #373b3d;
+    border: 1px solid transparent;
+    padding: 4px;
+    box-sizing: border-box;
+}
+div.input-searchbar:hover{
+    border: 1px solid rgb(116, 116, 116);
+}
+input[type=search].input-search {
+    width: 100%;
+    padding: 6px 0px;
+    border: none;
+}
+button.submit-searchbar{
+    background: #373E4A;
+    color: rgb(165, 165, 165);
+    border: none;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+button.submit-searchbar:hover{
+    background: #2f353f;
+}
+button.submit-searchbar:active{
+    background: #272c35;
+}
+
+button.access-button{
+    padding: 12px;
+    background-color: #4A40FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+button.access-button:hover{
+    background-color: #3f35f8;
+}
+button.access-button:active{
+    background-color: #3f35f8;
+    padding: 11px;
+    margin: 1px;
+}
+
+@media only screen and (max-width: 750px) {
+    div.container-header{
+        flex-wrap: wrap;
+        width: 95%;
+    }
+    div.container-logo{
+        width: 100%;
+        margin: 10px;
+        justify-content: center;
+    }
+    div.container-searchbar{
+        width: 100%;
+        margin: 10px;
+    }
+    div.container-access{
+        width: 100%;
+        margin: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Header area end  */
+
+@media only screen and (max-width: 750px) {
+    #container-register {
+        top: 40%;
+    }
 }
